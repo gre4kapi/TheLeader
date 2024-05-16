@@ -11,6 +11,7 @@ public static partial class Hooks
     public static void ApplyHooks()
     {
         ApplyWorldHooks();
+        ApplyPlayerHooks();
         ApplyConvs();
         ApplyWater();
         ApplySpawnHook();

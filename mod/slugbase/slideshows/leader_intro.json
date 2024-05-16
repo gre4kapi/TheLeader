@@ -1,0 +1,36 @@
+{
+  "id": "Leader_Intro",
+  "slideshow_folder": "slugbase/slideshows/leader_intro",
+  "next_process": "Game",
+  "music": {
+    "name": "Leader_Intro",
+    "fade_in": 80
+  },
+  "scenes": [
+    {
+      "name": "Start",
+      "fade_in_start": 1.5,
+      "fade_out_start": 10.0,
+      "images": [
+        {"name": "intropast3", "pos": [-26, -4], "depth": 4.3, "shader": "Normal"},
+		{"name": "intropast2", "pos": [-32, -94], "depth": 3.5, "shader": "Normal"},
+        {"name": "intropast1", "pos": [-39, -32], "depth": 2.0, "shader": "Normal"},
+		{"name": "introgourm", "pos": [406, -60], "depth": 2.4, "shader": "Normal"},
+      ],
+      "camera_path": [[3, 100, 0.2864583], [0, 324, 0.546875], [0, 324, 0.546875] ]
+    },
+    {
+      "name": "End",
+      "fade_in_start": 11.5,
+      "fade_out_start": 21.0,
+      "images": [
+        {"name": "introfuture3new", "pos": [-26, -4], "depth": 4.3, "shader": "Normal"},
+		{"name": "introfuture2", "pos": [-32, -94], "depth": 3.5, "shader": "Normal"},
+        {"name": "introfuture1", "pos": [-39, -32], "depth": 2.0, "shader": "Normal"},
+		{"name": "raindrops1", "pos": [-39, -32], "depth": 2.3, "shader": "Normal"},
+		{"name": "introleadnew", "pos": [406, -60], "depth": 2.4, "shader": "Normal"},
+      ],
+      "camera_path": [[3, 100, 0.2864583], [0, 324, 0.546875], [0, 324, 0.546875] ]
+    }
+  ]
+}

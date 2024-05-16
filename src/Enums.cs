@@ -1,6 +1,9 @@
 using MoreSlugcats;
 using static DataPearl.AbstractDataPearl;
+using static Menu.MenuScene;
+using static Menu.SlideShow;
 namespace TheLeader;
+
 public static class Enums
 {
     public static SlugcatStats.Name Leader = new(nameof(Leader), false);
@@ -17,8 +20,6 @@ public static class Enums
 
        //MeetLeader = new MoreSlugcats.SSOracleRotBehavior.RMConversation("MeetLeader", true);
 
-        Pebbles_Leader_FirstMeet = new Conversation.ID("Pebbles_Leader_FirstMeet", true);
-        Pebbles_Leader_AfterMet = new Conversation.ID("Pebbles_Leader_AfterMet", true);
         //GateRequirement.RegisterValues();
         registed = true;
     }
@@ -58,4 +59,17 @@ public static class Enums
         }
         public static RegionGate.GateRequirement LeaderLock;
     }*/
+    public static class Scenes
+    {
+        public static SceneID Dream_Leader_Random = new(nameof(Dream_Leader_Random), false);
+    }
+    public static class Dreams
+    {
+        public static DreamsState.DreamID Dream_Leader_Random = new(nameof(Dream_Leader_Random), true);
+
+        public static void RegisterDreams()
+        {
+            SlugBase.Assets.CustomDreams.SetDreamScene(Dream_Leader_Random, Scenes.Dream_Leader_Random);
+        }
+    }
 }

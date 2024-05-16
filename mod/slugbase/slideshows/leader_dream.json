@@ -1,0 +1,24 @@
+{
+  "id": "Leader_Dream",
+  "slideshow_folder": "slugbase/slideshows/leader_dream_random",
+  "next_process": "Game",
+  "music": {
+    "name": "Leader_Dream_Random",
+    "fade_in": 40
+  },
+  "scenes": [
+    {
+      "name": "Start",
+      "fade_in_start": 0.5,
+      "fade_out_start": 9.0,
+      "images": [
+        {"name": "leader-intro-background", "pos": [0, 0], "depth": 2.3, "shader": "Basic"},
+        {"name": "leader-intro1a", "pos": [0, 0], "depth": 2.0, "shader": "Basic"},
+        {"name": "leader-intro1b", "pos": [0, 0], "depth": 2.0, "shader": "Basic"},
+        {"name": "leader-chief-test", "pos": [0, 0], "depth": 2.5, "shader": "Basic"},
+        {"name": "leader-intro-foreground", "pos": [0, 0], "depth": 2.0, "shader": "Basic"}
+      ],
+      "camera_path": [ [50, 100] ]
+    }
+  ]
+}

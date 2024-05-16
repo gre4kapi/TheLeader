@@ -24,11 +24,6 @@ public partial class Hooks
             notFlooded = false;
 
         }
-        else
-        {
-            var message = "Leader room name:" + room.abstractRoom.name + " DefaultWaterLevel:" + room.defaultWaterLevel + " FloatWaterLevel:" + room.floatWaterLevel + " fWater:" + room.waterObject.fWaterLevel.ToString();
-            Debug.Log(message);
-        }
  
     }
     private static void OE_GourmandEnding_Update(On.MoreSlugcats.MSCRoomSpecificScript.OE_GourmandEnding.orig_Update orig, MSCRoomSpecificScript.OE_GourmandEnding self, bool eu)

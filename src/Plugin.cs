@@ -16,7 +16,7 @@ namespace TheLeader
     [BepInPlugin(MOD_ID, "The Leader", "0.1.0")]
     class Plugin : BaseUnityPlugin
     {
-        private const string MOD_ID = "gre4ka.theleader";
+        public const string MOD_ID = "gre4ka.theleader";
         public const string CAT_NAME = "Leader";
         static public SlugcatStats.Name SlugName;
         //public static DataPearl.AbstractDataPearl.DataPearlType FixedPebblesPearl;

@@ -3,6 +3,8 @@ using UnityEngine;
 using BepInEx.Logging;
 using System.Collections.Generic;
 using MoreSlugcats;
+using System.IO;
+using System.Linq;
 
 namespace TheLeader;
 public partial class Hooks
@@ -15,12 +17,20 @@ public partial class Hooks
     private static void StartRoom_Script(On.RoomSpecificScript.orig_AddRoomSpecificScript orig, Room room)
     {
         orig(room);
-        if (room.game.IsLeader() && room.abstractRoom.name == "OE_FINAL03" && room.game.world.rainCycle.CycleProgression == 0 && room.game.GetStorySession.saveState.cycleNumber == 0)
+
+        if (room.game.IsLeader() && room.game.world.rainCycle.CycleProgression == 0 && room.game.GetStorySession.saveState.cycleNumber == 0)
         {
-            room.AddObject(new OE_FINAL03(room));
-            var message = "ADDED LEADER SPAWN SCRIPT";
-            Debug.Log(message);
+            File.WriteAllText(AssetManager.ResolveFilePath("data/pebblesMet.txt"), "false");
+            Debug.Log("SETTING pebblesMet TO false");
+
+            if (room.abstractRoom.name == "OE_FINAL03")
+            {
+                room.AddObject(new OE_FINAL03(room));
+                var message = "ADDED LEADER SPAWN SCRIPT";
+                Debug.Log(message);
+            }
         }
+
     }
     public class OE_FINAL03 : UpdatableAndDeletable
     {
