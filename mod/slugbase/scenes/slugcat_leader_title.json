@@ -5,7 +5,7 @@
 		{ "name": "Background_test4", "pos": [360, 200], "depth": 3.7, "shader": "Basic" },
 		{ "name": "yellow bkgplants",    "pos": [450, 250], "depth": 2.8, "shader": "Basic" },
 		{ "name": "yellow vines",    "pos": [410, 470], "depth": 2.0, "shader": "Basic" },
-		{ "name": "SlugcatNew3",    "pos": [480, 260], "depth": 1.8, "shader": "Basic" },
+		{ "name": "SlugcatNew4",    "pos": [480, 260], "depth": 1.8, "shader": "Basic" },
 		{ "name": "yellow fgplants",    "pos": [370, 150], "depth": 1.7, "shader": "Basic" }
 	],
 	"idle_depths": [ 2.8 ],

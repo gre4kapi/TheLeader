@@ -25,7 +25,7 @@ Broken Shelters: Artificer: MS_S04
 Broken Shelters: Saint: MS_S04
 Broken Shelters: Spear: MS_S04
 Broken Shelters: Gourmand: MS_S04
-Room Setting Templates: Deep, Artery, Array, Vents, Sewers, Aerie
+Room Setting Templates: Deep, Artery, Array, Vents, Sewers, Aerie, Nesting
 Room_Attr: GATE_SL_MS: Vulture-Forbidden,BigEel-Forbidden,Scavenger-Avoid,KingVulture-Forbidden,MirosVulture-Forbidden,
 Room_Attr: GATE_MS_SL: Vulture-Forbidden,JetFish-Forbidden,BigEel-Forbidden,Scavenger-Forbidden,KingVulture-Forbidden,MirosVulture-Forbidden,
 Room_Attr: MS_ENTRANCE: Vulture-Forbidden,JetFish-Forbidden,BigEel-Forbidden,Scavenger-Forbidden,KingVulture-Forbidden,MirosVulture-Forbidden,
