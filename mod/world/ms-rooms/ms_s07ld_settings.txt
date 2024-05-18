@@ -1,5 +1,5 @@
 Template: NONE
-DangerType: AerieBlizzard
+DangerType: Rain
 RainIntensity: 0
 RumbleIntensity: 0
 WaveSpeed: 0.4839988

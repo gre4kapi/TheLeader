@@ -10,6 +10,7 @@ using static MonoMod.InlineRT.MonoModRule;
 using Random = UnityEngine.Random;
 using Expedition;
 using System.Reflection;
+using System.IO;
 
 namespace TheLeader;
 public partial class Hooks
@@ -50,8 +51,14 @@ public partial class Hooks
     public static void Player_EndUpdate(On.Player.orig_UpdateMSC orig, Player self)
     {
         orig(self);
+        string nestingOpen = File.ReadLines(AssetManager.ResolveFilePath("data/nestingOpen.txt")).First();
         if (!IsLeader(self.room.game))
             return;
+        if (nestingOpen == "true")
+        {
+            openGate = true;
+            openGateName = self.room.abstractRoom.name;
+        }
 
         if (self.room.IsGateRoom() && PearlWritedSave.pearlWrited && !openGate && self.room.regionGate.EnergyEnoughToOpen &&
             self == self.room.game.Players[0].realizedCreature as Player)//这一条是确保只对一个玩家更新
@@ -152,6 +159,7 @@ public partial class Hooks
             {
                 openCount = 0;
                 openGate = true;
+                File.WriteAllText(AssetManager.ResolveFilePath("data/nestingOpen.txt"), "true");
                 writedPearl = null;
                 for (int k = greenSparks.Count - 1; k >= 0; k--)
                 {

@@ -7,7 +7,7 @@ WaveAmplitude: 5.605194E-45
 SecondWaveLength: 0.1666667
 SecondWaveAmplitude: 0
 Clouds: 0.8586956
-Palette: 68
+Palette: 13
 EffectColorA: 11
 EffectColorB: 8
 Effects: BrokenZeroG-0.02173913-21-137, 

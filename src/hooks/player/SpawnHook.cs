@@ -20,7 +20,20 @@ public partial class Hooks
 
         if (room.game.IsLeader() && room.game.world.rainCycle.CycleProgression == 0 && room.game.GetStorySession.saveState.cycleNumber == 0)
         {
-            File.WriteAllText(AssetManager.ResolveFilePath("data/pebblesMet.txt"), "false");
+            room.game.manager.statsAfterCredits = true;
+            room.game.manager.nextSlideshow = Enums.Scenes.Leader_AltOutro;
+            room.game.manager.RequestMainProcessSwitch(ProcessManager.ProcessID.SlideShow);
+            string metPebbles = File.ReadLines(AssetManager.ResolveFilePath("data/pebblesMet.txt")).First();
+            string nestingOpen = File.ReadLines(AssetManager.ResolveFilePath("data/nestingOpen.txt")).First();
+            if (metPebbles == "true")
+            {
+                File.WriteAllText(AssetManager.ResolveFilePath("data/pebblesMet.txt"), "false");
+            }
+            if (nestingOpen == "true")
+            {
+                File.WriteAllText(AssetManager.ResolveFilePath("data/nestingOpen.txt"), "false");
+            }
+            
             Debug.Log("SETTING pebblesMet TO false");
 
             if (room.abstractRoom.name == "OE_FINAL03")

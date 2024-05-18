@@ -1,0 +1,5 @@
+[FIND]WhiteToken><831.0833><4484.611><0~-65~-398~-1~0~Chatlog_DM0~White|Yellow|Red|Rivulet|Artificer|Saint|Gourmand~0~1~0~0~0~1~0~0~0~1~0~0~0~1~0~0, 
+[REPLACE]
+[MERGE]
+PlacedObjects: WhiteToken><831.0833><4484.611><0~-65~-398~-1~0~Chatlog_DM0~White|Yellow|Red|Rivulet|Artificer|Saint|Gourmand~0~1~0~0~0~1~0~0~0~1~0~0~0~1~0~0~0~1~0~0, 
+[ENDMERGE]

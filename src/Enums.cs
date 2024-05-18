@@ -62,6 +62,10 @@ public static class Enums
     public static class Scenes
     {
         public static SceneID Dream_Leader_Random = new(nameof(Dream_Leader_Random), false);
+
+        public static SlideShowID Leader_AltOutro = new(nameof(Leader_AltOutro), false);
+        public static SlideShowID Leader_Outro = new(nameof(Leader_Outro), false);
+
     }
     public static class Dreams
     {

@@ -1,5 +1,5 @@
 Template: MS_SettingsTemplate_Sewers
-DangerType: Blizzard
+DangerType: Rain
 CeilingDrips: 0
 RainIntensity: 0
 RumbleIntensity: 0

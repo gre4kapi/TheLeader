@@ -1,3 +1,5 @@
+using System.IO;
+using System.Linq;
 using MoreSlugcats;
 using UnityEngine;
 namespace TheLeader;
@@ -57,6 +59,7 @@ public partial class Hooks
     }
     public static bool IsGateOpenForLeader(this RegionGate gate)
     {
+        
         var roomName = gate.room?.roomSettings?.name;
 
         if (gate.room == null || roomName == null)
@@ -67,9 +70,6 @@ public partial class Hooks
 
         // Metropolis gate
         /*if (roomName == "GATE_UW_LC")
-            return true;*/
-
-        /*if (roomName == "GATE_SL_MS")
             return true;*/
 
         if (roomName == "GATE_SB_OE")

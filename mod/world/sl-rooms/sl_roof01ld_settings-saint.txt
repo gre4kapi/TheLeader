@@ -1,5 +1,5 @@
 Template: NONE
-DangerType: Blizzard
+DangerType: Rain
 CeilingDrips: 0
 WaveSpeed: 0.6542559
 WaveLength: 0.9228721

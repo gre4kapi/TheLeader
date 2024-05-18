@@ -31,9 +31,9 @@
 		"start_room": "OE_FINAL03",
 		"CustomConversations": true,
 		"intro_slideshow": "Leader_Intro",
-		"outro_slideshow": "leader_outro",
+		"outro_slideshow": "Leader_Outro",
 		"select_menu_scene": "Slugcat_Leader_Title",
-		"select_menu_scene_ascended": "Ghost_Leader_Title",
+		"select_menu_scene_ascended": "Slugcat_Leader_Title_Ascended",
 		"sleep_scene": "Slugcat_Leader_Sleep",
 		"expedition_description": "First line of description.<LINE>Second line of description."
 	}

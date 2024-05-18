@@ -6,7 +6,7 @@ WaveLength: 0.9999774
 WaveAmplitude: 3.043275E-10
 SecondWaveLength: 0.1666667
 SecondWaveAmplitude: 0
-Palette: 68
+Palette: 13
 EffectColorA: 11
 EffectColorB: 8
 Effects: Darkness-0.2717391-276-75, 

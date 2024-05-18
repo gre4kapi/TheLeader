@@ -1,0 +1,14 @@
+Template: MS_SettingsTemplate_Nesting
+RainIntensity: 0.2717391
+WaveSpeed: 0.5003015
+WaveLength: 0.9998493
+WaveAmplitude: 0.0001010011
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0.04347826
+Grime: 0.1630435
+Effects: AboveCloudsView-0.03866627-20-20, 
+PlacedObjects: SeedCob><775.6277><297.8043><84.66351~172.8844~7~10, SeedCob><665.2431><354.5955><189.4304~58.87354~7~10, DeadSeedCob><-287.8611><410.2393><, DeadSeedCob><548.8543><289.3369><, KarmaFlower><340.0118><110.4877><488.7717~466.0052~5~7, DangleFruit><321.9882><485.1312><243.3188~17.78638~2~3, DangleFruit><351.4109><471.0138><191.3823~76.12604~2~3, DangleFruit><298.6779><363.4866><0~0~2~3, 
+FadePalette: 37, 0.5693842
+BackgroundOffset: 0,309.329
+BackgroundType: atc_default_msc
