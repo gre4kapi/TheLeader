@@ -9,6 +9,7 @@ using System.Linq;
 namespace TheLeader;
 public partial class Hooks
 {
+    private static bool ending = false;
     public static void ApplySpawnHook()
     {
         On.RoomSpecificScript.AddRoomSpecificScript += StartRoom_Script;
@@ -43,8 +44,11 @@ public partial class Hooks
                 Debug.Log(message);
             }
         }
+        
 
     }
+
+    
     public class OE_FINAL03 : UpdatableAndDeletable
     {
         private int timer;

@@ -12,6 +12,7 @@ public static partial class Hooks
     {
         ApplyWorldHooks();
         ApplyPlayerHooks();
+        ApplyEnding();
         ApplyConvs();
         ApplyWater();
         ApplySpawnHook();

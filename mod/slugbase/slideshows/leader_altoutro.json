@@ -9,57 +9,71 @@
   "scenes": [
     {
       "name": "Scene1",
-      "fade_in_start": 4.0,
-      "fade_out_start": 10.0, 
+      "fade_in_start": 1.2,
+      "fade_out_start": 17.0, 
       "images": [
-        {"name": "Scene1/10 - SlugcatsE", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/9 - SlugcatsD", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/8 - SlugcatsC", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/7 - SlugcatsB", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/6 - SlugcatsA", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/5 - MainSlugcat", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/4 - BlueBloom", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/3 - CatsBloom", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/2 - Specks", "pos": [71, 49], "depth": 2.4, "shader": "Normal"},
-		{"name": "Scene1/1 - ForegroundBloom", "pos": [71, 49], "depth": 2.4, "shader": "Normal"}
-      ],
-      "camera_path": [ [0, 0] ]
-    },
-    {
-      "name": "Scene2",
-      "fade_in_start": 12.0,
-      "fade_out_start": 21.0,
-      "images": [
-        {"name": "Outro2_2", "pos": [0, 0], "depth": -1.0, "shader": "Basic"},
-        {"name": "Outro2_1", "pos": [0, 0], "depth": -1.0, "shader": "Basic"}
+        {"name": "Scene1/10 - SlugcatsE", "pos": [71, 49], "depth": 8.0, "shader": "Normal"},
+		{"name": "Scene1/9 - SlugcatsD", "pos": [20, 167], "depth": 6.0, "shader": "Normal"},
+		{"name": "Scene1/8 - SlugcatsC", "pos": [16, 80], "depth": 3.5, "shader": "Normal"},
+		{"name": "Scene1/7 - SlugcatsB", "pos": [95, 200], "depth": 2.5, "shader": "Normal"},
+		{"name": "Scene1/6 - SlugcatsA", "pos": [208, 400], "depth": 1.3, "shader": "Normal"},
+		{"name": "Scene1/5 - MainSlugcat", "pos": [698, 296], "depth": 0.9, "shader": "Normal"},
+		{"name": "Scene1/4 - BlueBloom", "pos": [-68, -73], "depth": 5.0, "shader": "Lighten"},
+		{"name": "Scene1/3 - CatsBloom", "pos": [-114, -29], "depth": 0.9, "shader": "Lighten"},
+		{"name": "Scene1/2 - Specks", "pos": [31, -30], "depth": 11.0, "shader": "LightEdges"},
+		{"name": "Scene1/1 - ForegroundBloom", "pos": [-46, -325], "depth": 1.0, "shader": "Lighten"}
       ],
       "camera_path": [ [573, 48, 2.278646], [384, 14, -1], [159, -19, -1], [-63, -50, 0.8854166], [-284, -67, -1], [-551, -86, 0.3645833], [-790, -97, 0.3776042]]
     },
     {
-      "name": "Scene3",
-      "fade_in_start": 22.0,
-      "fade_out_start": 30.0,
+      "name": "Scene2",
+      "fade_in_start": 21.0,
+      "fade_out_start": 37.0,
       "images": [
-        {"name": "Outro3_3", "pos": [0, 0], "depth": 5.0, "shader": "Basic"},
-        {"name": "Outro3_2", "pos": [0, 0], "depth": 1.0, "shader": "Basic"},
-        {"name": "Outro3_1", "pos": [0, 0], "depth": 0.5, "shader": "Basic"}
+		{"name": "Scene2/7 - SwimBkg", "pos": [-197, -70], "depth": 18.0, "shader": "Normal"},
+		{"name": "Scene2/6 - BkgSwimmers", "pos": [-187, -131], "depth": 5.0, "shader": "LightEdges"},
+		{"name": "Scene2/5 - MainSwimmer", "pos": [609, 46], "depth": 3.0, "shader": "Normal"},
+		{"name": "Scene2/4 - SlugcatBloomLighten", "pos": [578, 17], "depth": 2.9, "shader": "Lighten"},
+		{"name": "Scene2/3 - SlugcatBloomOverlay", "pos": [534, -60], "depth": 2.95, "shader": "Overlay"},
+		{"name": "Scene2/2 - Bubbles", "pos": [71, 49], "depth": 1.5, "shader": "LightEdges"},
+		{"name": "Scene2/1 - ForegroundSlugcats", "pos": [-313, -175], "depth": 0.6, "shader": "Normal"}
       ],
-      "camera_path": [ [-200, 0] ]
+      "camera_path": [ [-603, -311, 0.9635416], [-427, -68, 0.6901041], [-254, 51, -1], [-99, 112, 0.46875], [45, 143, -1], [170, 156, -1], [250, 162, 0.2604167]]
+    },
+    {
+      "name": "Scene3",
+      "fade_in_start": 41.0,
+      "fade_out_start": 46.6,
+      "images": [
+		{"name": "Scene3/5 - CloudsB", "pos": [-77, -71], "depth": 8.0, "shader": "Normal"},
+		{"name": "Scene3/4 - CloudsA", "pos": [-90, -49], "depth": 6.1, "shader": "Normal"},
+		{"name": "Scene3/3 - BloomLights", "pos": [26, 6], "depth": 2.8, "shader": "Normal"},
+		{"name": "Scene3/2 - Face", "pos": [43, -59], "depth": 2.0, "shader": "Normal"},
+		{"name": "Scene3/1 - FaceBloom", "pos": [5, -80], "depth": 1.9, "shader": "Overlay"}
+      ],
+      "camera_path": [ [-634, -309, 0], [-413, -226, -1], [-224, -173, 0.2213542], [-13, -137, -1], [202, -139, 0.234375], [346, -149, -1], [509, -219, 0.5859375]]
     },
     {
       "name": "Scene4",
-      "fade_in_start": 32.0,
-      "fade_out_start": 40.0,
+      "fade_in_start": 48.0,
+      "fade_out_start": 55.0,
       "images": [
-        {"name": "Outro4_2", "pos": [0, 0], "depth": 5.0, "shader": "Basic"},
-        {"name": "Outro4_1", "pos": [0, 0], "depth": 0.5, "shader": "Basic"}
+		{"name": "Scene4/8 - Bkg", "pos": [-144, -36], "depth": 18.0, "shader": "Normal"},
+		{"name": "Scene4/7 - Trunk", "pos": [-149, -53], "depth": 7.2, "shader": "Normal"},
+		{"name": "Scene4/6 - Foliage", "pos": [-127, 287], "depth": 5.2, "shader": "LightEdges"},
+		{"name": "Scene4/5 - Fog", "pos": [-163, -22], "depth": 6.0, "shader": "LightEdges"},
+		{"name": "Scene4/4 - TreeLight", "pos": [-3, 136], "depth": 5.1, "shader": "Lighten"},
+		{"name": "Scene4/3 - TreeOverlay", "pos": [-125, -78], "depth": 5.0, "shader": "Overlay"},
+		{"name": "Scene4/2 - MainSlugcat", "pos": [647, 159], "depth": 2.0, "shader": "LightEdges"},
+		{"name": "Scene4/1 - SlugcatBloom", "pos": [477, 180], "depth": 1.9, "shader": "Lighten"},
+		{"name": "Scene4/0 - ForeGroundSlugcats", "pos": [-150, -47], "depth": 0.7, "shader": "Normal"}
       ],
-      "camera_path": [ [100, 100] ]
+      "camera_path": [ [-289, -27, 0.5078125], [-216, 16, 0.546875], [-136, 42, 0.7421875], [-43, 55, 1.171875], [72, 63, 0.2994792], [163, 82, 0.2604167], [250, 126, 0.2473958]]
     },
     {
       "name": "Black",
-      "fade_in_start": 62.0,
-      "fade_out_start": 65.0,
+      "fade_in_start": 61.0,
+      "fade_out_start": 66.0,
       "images": [
         {"name": "Black", "pos": [0, 0], "depth": -1.0, "shader": "Basic"}
       ],
