@@ -24,6 +24,7 @@ namespace TheLeader
 
         public new static ManualLogSource Logger { get; private set; } = null!;
         public static bool gateLock = true;
+        private bool warpid = false;
 
         // Add hooks
         public void OnEnable()
@@ -36,7 +37,7 @@ namespace TheLeader
         private void Player_Jump(On.Player.orig_Jump orig, Player self)
         {
             orig(self);
-            if (self.room.game.manager.upcomingProcess != null)
+            /*if (self.room.game.manager.upcomingProcess != null)
             {
                 return;
             }
@@ -53,7 +54,19 @@ namespace TheLeader
             RainWorldGame.BeatGameMode(self.room.game, true);
             self.room.game.manager.statsAfterCredits = true;
             self.room.game.manager.nextSlideshow = Enums.Scenes.Leader_Outro;
-            self.room.game.manager.RequestMainProcessSwitch(ProcessManager.ProcessID.SlideShow);
+            self.room.game.manager.RequestMainProcessSwitch(ProcessManager.ProcessID.SlideShow);*/
+            Vector2 npcvector = new Vector2(UnityEngine.Random.Range(480f, 3450f), UnityEngine.Random.Range(230f, 300f));
+            AbstractCreature abstractCreature = new AbstractCreature(self.room.world, StaticWorld.GetCreatureTemplate(MoreSlugcatsEnums.CreatureTemplateType.SlugNPC), null, self.room.ToWorldCoordinate(npcvector), self.room.game.GetNewID());
+            if (!self.room.world.game.rainWorld.setup.forcePup)
+            {
+                (abstractCreature.state as PlayerState).forceFullGrown = true;
+            }
+            abstractCreature.RealizeInRoom();
+            if (!warpid)
+            {
+                self.room.game.overWorld.InitiateSpecialWarp_SingleRoom(null, "OE_FINAL03");
+                warpid = true;
+            }
         }
 
         // Load any resources, such as sprites or sounds

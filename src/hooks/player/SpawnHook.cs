@@ -37,7 +37,7 @@ public partial class Hooks
             
             Debug.Log("SETTING pebblesMet TO false");
 
-            if (room.abstractRoom.name == "OE_FINAL03")
+            if (room.abstractRoom.name == "OE_FINAL03" && !ending && room.game.manager.statsAfterCredits == true)
             {
                 room.AddObject(new OE_FINAL03(room));
                 var message = "ADDED LEADER SPAWN SCRIPT";
@@ -96,8 +96,6 @@ public partial class Hooks
                 Vector2 vector = new Vector2(350.0f, 310.0f);
                 room.game.FirstAlivePlayer.realizedCreature.bodyChunks[0].HardSetPosition(vector + new Vector2(9f, 0f));
                 room.game.FirstAlivePlayer.realizedCreature.bodyChunks[1].HardSetPosition(vector + new Vector2(-5f, 0f));
-                var message = "bebra: "+playerPos;
-                Debug.Log(message);
             }
             if (timer == 300)
             {
