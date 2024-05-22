@@ -366,7 +366,7 @@ public partial class Hooks
             }
 			if (timer == (startDisplay - 60) || timer == (startDisplay - 90) || timer == (startDisplay - 120))
 			{
-                self.room.PlaySound(SoundID.SS_AI_Text, self.room.game.FirstAlivePlayer.realizedCreature.firstChunk.pos, 1.5f, 1f);
+                self.room.PlaySound(SoundID.SS_AI_Text, self.room.game.FirstAlivePlayer.realizedCreature.firstChunk.pos, 1.5f, 0.8f);
             }
 			if (timer == startDisplay)
 			{
@@ -395,7 +395,7 @@ public partial class Hooks
 			{
 				if (image2Exists)
 				{
-                    self.room.PlaySound(SoundID.SS_AI_Text, self.room.game.FirstAlivePlayer.realizedCreature.firstChunk.pos, 1.5f, 1f);
+                    self.room.PlaySound(SoundID.SS_AI_Text, self.room.game.FirstAlivePlayer.realizedCreature.firstChunk.pos, 1.5f, 1.3f);
                     myScreen.RemoveImage("chieftain");
 					image2Exists = false;
                 }
@@ -492,9 +492,9 @@ public partial class Hooks
         {
             base.Update(eu);
             timer++;
-			if (timer == 1)
+            self.oracleBehavior.lookPoint = wantPos;
+            if (timer == 1)
 			{
-				self.oracleBehavior.lookPoint = wantPos;
  				eyesClosed = true;
 				Debug.Log("Seaching for pearl to fix");
 				List<PhysicalObject>[] physicalObjects = self.room.physicalObjects;

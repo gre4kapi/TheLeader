@@ -13,6 +13,7 @@ public static partial class Hooks
         ApplyWorldHooks();
         ApplyPlayerHooks();
         ApplyEnding();
+        ApplySlideShowHooks();
         ApplyConvs();
         ApplyWater();
         ApplySpawnHook();

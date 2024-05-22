@@ -21,6 +21,7 @@ public partial class Hooks
 
         if (room.game.IsLeader() && room.game.world.rainCycle.CycleProgression == 0 && room.game.GetStorySession.saveState.cycleNumber == 0)
         {
+            ending = false;
             room.game.manager.statsAfterCredits = true;
             room.game.manager.nextSlideshow = Enums.Scenes.Leader_AltOutro;
             room.game.manager.RequestMainProcessSwitch(ProcessManager.ProcessID.SlideShow);
